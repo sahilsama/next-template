@@ -52,7 +52,7 @@ export default function Features1() {
 
       {/* Title */}
       <SlideEffect>
-        <h2 className="text-2xl md:text-4xl lg:text-header capitalize text-black font-medium leading-none">{settings.title}</h2>
+        <h2 className="text-2xl md:text-4xl lg:text-header capitalize font-medium leading-none text-transparent bg-clip-text bg-gradient-to-b from-black to-black/60">{settings.title}</h2>
       </SlideEffect>
 
       {/* Description */}

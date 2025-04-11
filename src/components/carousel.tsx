@@ -1,6 +1,6 @@
 'use client'
 
-import { motion } from 'motion/react'
+import * as motion from "motion/react-m"
 import Image from 'next/image'
 
 export default function Carousel({ images, itemWidth = 40, itemHeight = 40, spacing = 60 }: { images: string[], itemWidth?: number, itemHeight?: number, spacing?: number }) {

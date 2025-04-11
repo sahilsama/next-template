@@ -11,7 +11,7 @@ import Link from "next/link";
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 
 const settings = {
-  headline: 'Go Beyond Clicks',
+  headline: 'Hello YouTube',
   subheadline: 'Privacy-friendly web analytics made and hosted in Germany — powerful, cookie-free, and fully compliant with GDPR, CCPA, and PECR.',
   mainCTA: {
     content: 'try it for free',
@@ -64,7 +64,7 @@ export default function Hero() {
       <section className="flex flex-col gap-8 lg:gap-11 items-center text-center">
         {/* Headline */}
         <h1 className="text-black text-4xl md:text-6xl lg:text-hero font-medium tracking-tight leading-none xl:max-w-3/4">
-          <TextBlurEffect>{settings.headline}</TextBlurEffect>
+          <TextBlurEffect className='text-transparent bg-clip-text bg-gradient-to-b from-black to-black/60'>{settings.headline}</TextBlurEffect>
         </h1>
 
         {/* Sub-headline */}
@@ -123,12 +123,14 @@ export default function Hero() {
         </SlideEffect>
 
         {/* Illustration */}
-        <SlideEffect className="relative" transition={{ duration: 1.3, ease: [1, 0, 0, 1] }}>
+        <SlideEffect className="relative" isSpring={false} duration={1.3}>
           <Image
             src={settings.illustration}
             alt='illustration'
             width={1920}
             height={1080}
+            priority
+            loading="eager"
           />
           <FadeEffect />
         </SlideEffect>

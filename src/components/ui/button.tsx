@@ -2,7 +2,7 @@
 import * as React from "react"
 import { Slot } from "@radix-ui/react-slot"
 import { cva, type VariantProps } from "class-variance-authority"
-import { motion } from 'motion/react'
+import * as motion from "motion/react-m"
 
 import { cn } from "@/lib/utils"
 
@@ -48,7 +48,7 @@ function Button({
     asChild?: boolean
   }) {
   const Comp = asChild ? Slot : "button"
-  const Motion = motion(Comp as any)
+  const Motion = motion.create(Comp as any)
 
   return (
     <Motion

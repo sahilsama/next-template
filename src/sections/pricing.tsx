@@ -65,7 +65,7 @@ export default function Pricing() {
     <div id='pricing' className="space-y-6 sm:space-y-7 md:space-y-8 lg:space-y-10 mx-auto text-center">
       {/* Title */}
       <SlideEffect>
-        <h2 className="text-2xl md:text-4xl lg:text-header capitalize text-black font-medium leading-none">{settings.title}</h2>
+        <h2 className="text-2xl md:text-4xl lg:text-header capitalize text-transparent bg-clip-text bg-gradient-to-b from-black to-black/60 font-medium leading-normal">{settings.title}</h2>
       </SlideEffect>
 
       {/* Description */}
@@ -99,7 +99,7 @@ export default function Pricing() {
 
         {/* plan 2 */}
         <SlideEffect isSpring={false} delay={0.2} className="flex flex-col gap-6 text-base">
-          <Card className="bg-gradient-to-b from-secondary to-white">
+          <Card className="bg-secondary">
             <div className="w-full flex items-center gap-2 justify-between">
               <div className="capitalize text-start text-black">{settings.plan_2.planName}</div>
               <div className="text-xs bg-accent px-2 py-1 rounded-full text-black capitalize">most popular</div>

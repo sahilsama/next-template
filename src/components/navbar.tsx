@@ -4,7 +4,8 @@ import Logo from "./logo"
 import Link from "next/link"
 import { Button } from "./ui/button"
 import { AlignJustify, X } from "lucide-react"
-import { motion, AnimatePresence } from 'motion/react'
+import { AnimatePresence } from 'motion/react'
+import * as motion from "motion/react-m"
 import { useState } from "react"
 
 const settings = {

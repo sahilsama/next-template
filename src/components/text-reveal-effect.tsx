@@ -1,8 +1,9 @@
 'use client'
 
-import { motion, MotionProps } from 'motion/react'
+import { MotionProps } from "motion/react"
+import * as motion from "motion/react-m"
 
-export default function TextRevealEffect({ children, ...props }: { children: string } & React.ComponentProps<'span'> & MotionProps) {
+export default function TextRevealEffect({ children, className }: { children: string } & React.ComponentProps<'span'> & MotionProps) {
   return (
     children.split('').map((char, i) => (
       <motion.span
@@ -12,7 +13,7 @@ export default function TextRevealEffect({ children, ...props }: { children: str
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: i * 0.015, ease: [1, 0, 0, 1], duration: 1 }}
         viewport={{ once: true }}
-        {...props}
+        className={className}
       >
         {char}
       </motion.span>

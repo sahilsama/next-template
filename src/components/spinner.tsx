@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import { motion } from 'framer-motion'
+import * as motion from "motion/react-m"
 import Image from 'next/image'
 import { cn } from '@/lib/utils'
 import FadeEffect from './fade-effect'
@@ -15,7 +15,7 @@ interface SpinnerProps {
 const AvatarsCircle = ({ avatars }: { avatars: string[] }) => {
   const radius = 180 * 1.6; // Adjust this value to change circle size
   const center = radius;
-  const MotionImage = motion(Image);
+  const MotionImage = motion.create(Image);
 
   return (
     <motion.div
