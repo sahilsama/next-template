@@ -8,7 +8,7 @@ import Footer from "@/sections/footer";
 import Hero from "@/sections/hero";
 import Pricing from "@/sections/pricing";
 import Testimonials from "@/sections/testimonials";
-
+import { Analytics } from "@vercel/analytics/next"
 export default function HomePage() {
   return (
     <div className="px-4 xl:px-0 max-w-5xl mx-auto space-y-20 sm:space-y-24 md:space-y-32 lg:space-y-40 scroll-smooth">
@@ -21,6 +21,7 @@ export default function HomePage() {
       <Pricing />
       <FAQ />
       <CTA />
+      <Analytics/>
       <Footer />
     </div>
   )
