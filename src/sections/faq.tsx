@@ -20,11 +20,11 @@ const settings = {
       answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laboriosam neque reprehenderit saepe eius dolorum vel consequuntur perspiciatis ad vero.',
     },
     {
-      question: 'How many licks does it take to get to the center of a tootsie pop?',
+      question: 'How many years it takes to touch moon?',
       answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laboriosam neque reprehenderit saepe eius dolorum vel consequuntur perspiciatis ad vero.',
     },
     {
-      question: "Where's Waldo?",
+      question: "Where's india?",
       answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laboriosam neque reprehenderit saepe eius dolorum vel consequuntur perspiciatis ad vero.',
     },
   ]
