@@ -2,16 +2,16 @@ import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import LenisProvider from "@/providers/lenis";
+import { Analytics } from "@vercel/analytics/next";
 
 const dmSans = DM_Sans({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
-
 export const metadata: Metadata = {
-  title: "Next SaaS",
-  description: "Change this"
+  title: "Your SaaS Landing Page",
+  description: "Your product description here"
 };
 
 export default function RootLayout({
@@ -27,6 +27,7 @@ export default function RootLayout({
         <LenisProvider>
           {children}
         </LenisProvider>
+        <Analytics />
       </body>
     </html>
   );
